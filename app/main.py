@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from services.llm import run_llm
+from app.services.llm import run_llm
 from app.transform import prfaq_to_safefeatures
 
 app = FastAPI(title="PRFAQ Agent")
